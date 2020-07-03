@@ -182,9 +182,9 @@ definitions:
       machineName:
         type: string
         example: Extruder AB-100
-      machineDescription: null
-      type: string
-      example: 'Extruder with 1,000fpm output capacity'
+      machineDescription:
+        type: string
+        example: 'Extruder with 1,000fpm output capacity'
   Warehouse:
     type: object
     properties:
