@@ -87,7 +87,7 @@ paths:
     get:
       tags:
         - inventory
-      summary: Return an array containing all inventory items for a single warehouse
+      summary: Return an array containing all inventory items for a warehouse
       description: Currently an unpaged inventory item list
       operationId: getWarehouseInventoryItems
       parameters:
@@ -126,7 +126,8 @@ paths:
           description: Inventory Item Added
           schema:
             $ref: '#/definitions/InventoryItem'
-    patch:
+  '/warehouses/{warehouseId}/inventory-items/{inventoryItemId}':
+    put:
       tags:
         - inventory
       summary: Updates an inventory item in a warehouse
@@ -137,13 +138,18 @@ paths:
           description: The ID of the warehouse containing the inventory item
           required: true
           type: string
+        - name: inventoryItemId
+          in: path
+          description: The ID of the inventory item in the warehouse
+          required: true
+          type: string
         - name: item
           description: |
-            This object represents all the Item specifics
+            This object represents all the inventory item properties
           in: body
           required: true
           schema:
-            $ref: '#/definitions/InventoryUpdate'
+            $ref: '#/definitions/InventoryItem'
       responses:
         '201':
           description: Item Updated
@@ -160,6 +166,11 @@ paths:
         - name: warehouseId
           in: path
           description: The ID of the warehouse containing the inventory item
+          required: true
+          type: string
+        - name: inventoryItemId
+          in: path
+          description: The ID of the inventory item in the warehouse
           required: true
           type: string
       responses:
@@ -213,30 +224,6 @@ definitions:
           product, ready for distribution.
       warehouseAddress:
         $ref: '#/definitions/Address'
-  InventoryUpdate:
-    type: object
-    properties:
-      warehouseId:
-        type: integer
-        format: int64
-      itemId:
-        type: integer
-        format: int64
-      itemSKU:
-        type: integer
-        format: int64
-      itemQuantity:
-        type: integer
-        format: int64
-      itemName:
-        type: string
-        example: Waterproof seal
-      itemDescription:
-        type: string
-        example: For sealing specimens to preserve them
-      itemDelete:
-        type: boolean
-        example: Set True to delete item from inventory
   InventoryItem:
     type: object
     properties:
