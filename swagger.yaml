@@ -151,6 +151,20 @@ paths:
             type: array
             items:
               $ref: '#/definitions/InventoryItem'
+    delete: 
+      tags:
+        - inventory
+      summary: Removes an inventory item from warehouse inventory items
+      operationId: removeWarehouseInventoryItem
+      parameters:
+        - name: warehouseId
+          in: path
+          description: The ID of the warehouse containing the inventory item
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Item has been removed from warehouse inventory items
 definitions:
   Factory:
     type: object
