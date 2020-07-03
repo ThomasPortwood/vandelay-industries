@@ -123,11 +123,9 @@ paths:
             $ref: '#/definitions/InventoryItem'
       responses:
         '201':
-          description: Item Added
+          description: Inventory Item Added
           schema:
-            type: array
-            items:
-              $ref: '#/definitions/InventoryItem'
+            $ref: '#/definitions/InventoryItem'
     patch:
       tags:
         - inventory
