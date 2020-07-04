@@ -19,6 +19,12 @@ info:
      
          
   version: 0.0.1
+  
+  contact:
+    name: Vandelay Industries Tech Support
+    email: support@vandelay.com
+    url: https://app.swaggerhub.com/apis-docs/SomeSoftwareTeam/vandelay-industries/0.0.1
+    
 host: vandelay.apivista.com
 schemes:
   - https
