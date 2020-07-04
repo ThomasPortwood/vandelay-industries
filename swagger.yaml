@@ -32,6 +32,11 @@ schemes:
 basePath: /v1
 produces:
   - application/json
+securityDefinitions:
+  basicAuth:
+    type: basic
+security:
+  - basicAuth: []
 paths:
   /factories:
     get:
