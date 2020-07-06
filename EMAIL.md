@@ -29,3 +29,8 @@ I've structured my feedback in order of priority:
     - [Remove support for insecure http protocol](https://github.com/ThomasPortwood/vandelay-industries/issues/20)
     - [Unused 'null' and indentation mistake](https://github.com/ThomasPortwood/vandelay-industries/issues/2)
     - Update to the OpenAPI specification 3.0 (formerly Swagger specification)
+    
+That's it for my first review. A live version of the API documentation can be seen on [SwaggerHub](https://app.swaggerhub.com/apis-docs/SomeSoftwareTeam/vandelay-industries/0.0.1). Vandelay developers can use the [SwaggerHub Design Tools](https://app.swaggerhub.com/apis/SomeSoftwareTeam/vandelay-industries/0.0.1#trial) to easily preview changes as we all collaborate on the next version. I'm looking forward to hearing from your team!
+
+- Tom
+
