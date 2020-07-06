@@ -34,7 +34,6 @@ tags:
 host: vandelay.apivista.com
 schemes:
   - https
-  - http
 basePath: /v1
 produces:
   - application/json
