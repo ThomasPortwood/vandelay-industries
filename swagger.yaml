@@ -24,7 +24,13 @@ info:
     name: Vandelay Industries Tech Support
     email: support@vandelay.com
     url: https://app.swaggerhub.com/apis-docs/SomeSoftwareTeam/vandelay-industries/0.0.1
-    
+tags:
+  - name: real estate
+    description: Vandelay Industries real estate asset data
+  - name: capital equipment
+    description: Vandelay Industries equipment data
+  - name: inventory
+    description: Management of Vandelay Industries inventory records
 host: vandelay.apivista.com
 schemes:
   - https
