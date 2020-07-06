@@ -8,10 +8,7 @@ First off, congratulations on the first draft. Vandelay has made a few key decis
 
 I've made a temporary [git repository](https://github.com/ThomasPortwood/vandelay-industries) so I can collaborate with the Vandelay engineers. I've included a detailed explanation of each proposed change in a [GitHub issue](https://github.com/ThomasPortwood/vandelay-industries/issues?q=is%3Aissue+is%3Aclosed), made the proposed change, and then cataloged the changes in a [changelog](https://github.com/ThomasPortwood/vandelay-industries/blob/master/CHANGELOG.md) using a [super useful widely adopted format](https://keepachangelog.com/en/1.0.0/). In the future, we'll have discussion on GitHub issues before permitting proposed changes to be merged. 
 
-I've structured my feedback in order of priority:
-- Adherence to the principles of REST
-- Usability and documentation quality
-- Further recommendations
+I've categorized my first thoughts by priority:
 
 - Adherence to the principles of REST
     - [PATCH verb should be replaced with PUT verb and refer to a specific resource](https://github.com/ThomasPortwood/vandelay-industries/issues/6)
@@ -30,7 +27,9 @@ I've structured my feedback in order of priority:
     - [Unused 'null' and indentation mistake](https://github.com/ThomasPortwood/vandelay-industries/issues/2)
     - Update to the OpenAPI specification 3.0 (formerly Swagger specification)
     
-That's it for my first review. A live version of the API documentation can be seen on [SwaggerHub](https://app.swaggerhub.com/apis-docs/SomeSoftwareTeam/vandelay-industries/0.0.1). Vandelay developers can use the [SwaggerHub Design Tools](https://app.swaggerhub.com/apis/SomeSoftwareTeam/vandelay-industries/0.0.1#trial) to easily preview changes as we all collaborate on the next version. I'm looking forward to hearing from your team!
+That's it for my first pass. A live version of the API documentation can be seen on [SwaggerHub](https://app.swaggerhub.com/apis-docs/SomeSoftwareTeam/vandelay-industries/0.0.1). For the next version, I'd like Vandelay developers to submit issues to [this repository](https://github.com/ThomasPortwood/vandelay-industries/issues) for discussion, or I can work with them on their own VCS if that is easier. I can also invite members of the development team to make updates using the [SwaggerHub Design Tools](https://app.swaggerhub.com/apis/SomeSoftwareTeam/vandelay-industries/0.0.1#trial) to easily preview changes as we all collaborate on the next version. 
+
+I'm looking forward to hearing from your team!
 
 - Tom
 
