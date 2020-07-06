@@ -168,12 +168,14 @@ paths:
           schema:
             $ref: '#/definitions/InventoryItem'
       responses:
-        '201':
+        '200':
           description: Item Updated
           schema:
-            type: array
-            items:
-              $ref: '#/definitions/InventoryItem'
+            $ref: '#/definitions/InventoryItem'
+        '201':
+          description: Item Created
+          schema:
+            $ref: '#/definitions/InventoryItem'
     delete: 
       tags:
         - inventory
